@@ -18,10 +18,26 @@ exports.arraysAnswers = {
 
   remove : function(arr, item) {
 
+      function isNotEqualTo(value){
+          return item !== value;
+      }
+
+      return arr.filter(isNotEqualTo);
+
   },
 
   removeWithoutCopy : function(arr, item) {
 
+      var newArr = [];
+      for(var i = 0, len = arr.length; i < len; i++){
+
+          if(arr[i] !== item) {
+             newArr[i] = arr[i];
+         }
+      }
+      console.log(newArr);
+
+      return newArr;
   },
 
   append : function(arr, item) {

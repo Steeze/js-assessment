@@ -35,6 +35,7 @@ describe('arrays', function() {
     var result = arraysAnswers.removeWithoutCopy(a, 2);
 
     expect(result).to.have.length(3);
+
     expect(result.join(' ')).to.eql('1 3 4');
 
     // make sure that you return the same array instance
