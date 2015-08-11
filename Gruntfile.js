@@ -27,6 +27,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 4444,
+          open:'http://localhost:4444',
         base: {
           path: __dirname,
           options: {
